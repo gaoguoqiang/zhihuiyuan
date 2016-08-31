@@ -1,0 +1,54 @@
+﻿<extend name="Base/common" />
+<block name="head">
+  <link rel="stylesheet" href="__CSS__/public/page_nav.css">
+  <link rel="stylesheet" href="__CSS__/contact.css">
+</block>
+<block name="main">
+  <div id="content" class="clear">
+      <div class="page_nav">
+          <a class="index" href="__ROOT__/Index/index">首页</a>
+          <span>&gt;</span>
+          <a class="now_page" href="__ROOT__/Company/index">企业百科</a>
+      </div>
+      <div class="main_left">
+          <ul class="company_info">
+              <li>智慧源战略发展集群运营总部</li>
+              <li>联系电话：010-5629-6452</li>
+              <li>地址：北京万世名流酒店会议楼五层</li>
+              <li>邮箱：jqhmjd@163.com</li>
+              <li>工作时间：上午：9:00 - 12:00</li>
+              <li>　　　　　下午：13:00-18:00</li>
+          </ul>
+      </div>
+      <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d3954d76df90df19b9d8f2b75af533d0"></script> 
+      <div class="main_right">
+         <div id="container">
+            <script type="text/javascript">
+              var map = new AMap.Map('container',{
+                zoom: 17,                                  //设置地图缩放级别
+                center: [116.4390208346,40.0282927031]     //设置地图中心点*经度在前，纬度在后*
+              });
+              var marker = new AMap.Marker({
+                position: [116.4390208346,40.0282927031],  //设置标记点位置
+                map:map
+              });
+              var infowindow = new AMap.InfoWindow({
+                content: '<h1>智慧方略管理顾问有限公司</h1><div>北京智慧方略管理顾问有限公司，主力中小企业迈向世界500强！</div>',
+                offset: new AMap.Pixel(0, -30),
+                size:new AMap.Size(230,0)
+              });
+              infowindow.open(map,new AMap.LngLat(116.4390208346,40.0282927031));   //默认打开提示信息
+            </script>
+         </div>
+      </div>
+  </div>
+    
+  <div class="qq clear">
+    <span>在线客服</span>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2990965492&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2990965492:50" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2994985924&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2994985924:50" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2990965492&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2990965492:50" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2994985924&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2994985924:50" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+  </div>
+
+</block>
