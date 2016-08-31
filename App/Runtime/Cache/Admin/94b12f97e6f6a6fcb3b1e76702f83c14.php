@@ -5,7 +5,7 @@
 <title><?php echo ($msgTitle); ?></title>
 <style type="text/css">
 body {
-	background:url(/zhihuiyuan/Public/<?php echo MODULE_NAME;?>/img/weibo_bg.jpg);
+	background:url(/Public/<?php echo MODULE_NAME;?>/img/weibo_bg.jpg);
 }
 .info {
 	width:800px;
@@ -24,10 +24,10 @@ body {
 	text-indent:45px;
 }
 .success {
-	background:url(/zhihuiyuan/Public/<?php echo MODULE_NAME;?>/img/jump_success.png) no-repeat;
+	background:url(/Public/<?php echo MODULE_NAME;?>/img/jump_success.png) no-repeat;
 }
 .error {
-	background:url(/zhihuiyuan/Public/<?php echo MODULE_NAME;?>/img/jump_error.png) no-repeat;
+	background:url(/Public/<?php echo MODULE_NAME;?>/img/jump_error.png) no-repeat;
 }
 .jump {
 	color:#666;

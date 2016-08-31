@@ -46,7 +46,7 @@ function getTypeStr2(){
 			$typeTwoArr=M("36serves")->where("nid={$v1['id']}")->select();
 			foreach($typeTwoArr as $v2){
 				if($v2['nid'] < 5){
-					$content.="<dd><a href=\"/zhihuiyuan/Index/commitList1/nid/{$v2['id']}\">{$v2['36name']}</a>
+					$content.="<dd><a href=\"/Index/commitList1/nid/{$v2['id']}\">{$v2['36name']}</a>
 						<ul class=\"nav_side_info\">
 						";
 						//获取第三级
@@ -54,7 +54,7 @@ function getTypeStr2(){
 						foreach($typeThreeArr as $v3){
 						$content.="
 						<li>
-						<a href=\"/zhihuiyuan/Index/commitList1/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['36name']}</a>
+						<a href=\"/Index/commitList1/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['36name']}</a>
 						</li>
 						";
 						}
@@ -80,7 +80,7 @@ function getTypeStr2(){
 			$typeTwoArr=M("36serves")->where("nid={$v1['id']}")->select();
 			foreach($typeTwoArr as $v2){
 				if($v2['nid'] < 6){
-					$content.="<dd><a href=\"/zhihuiyuan/Index/commitList1/nid/{$v2['id']}\">{$v2['36name']}</a>
+					$content.="<dd><a href=\"/Index/commitList1/nid/{$v2['id']}\">{$v2['36name']}</a>
 						<ul class=\"nav_side_info\">
 						";
 								//获取第三级
@@ -88,7 +88,7 @@ function getTypeStr2(){
 						foreach($typeThreeArr as $v3){
 						$content.="
 						<li>
-						<a href=\"/zhihuiyuan/Index/commitList1/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['36name']}</a>
+						<a href=\"/Index/commitList1/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['36name']}</a>
 						</li>
 						";
 						}
@@ -113,7 +113,7 @@ function getTypeStr2(){
 			//获取第二级
 			$typeTwoArr=M("36serves")->where("nid={$v1['id']}")->select();
 			foreach($typeTwoArr as $v2){
-			$content.="<dd><a href=\"/zhihuiyuan/Index/commitList1/nid/{$v2['id']}\">{$v2['36name']}</a>
+			$content.="<dd><a href=\"/Index/commitList1/nid/{$v2['id']}\">{$v2['36name']}</a>
 			<ul class=\"nav_side_info\">
 			";
 			//获取第三级
@@ -121,7 +121,7 @@ function getTypeStr2(){
 				foreach($typeThreeArr as $v3){
 				$content.="
 				<li>
-				<a href=\"/zhihuiyuan/Index/commitList1/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['36name']}</a>
+				<a href=\"/Index/commitList1/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['36name']}</a>
 				</li>
 				";
 				}

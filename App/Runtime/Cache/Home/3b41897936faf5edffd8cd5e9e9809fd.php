@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>中小企业集群运营总部</title>
+<link rel="shortcut icon" type="image/x-icon" href="/Public/Home/img/logo.ico" />
 <link rel="stylesheet" href="/Public/Home/css/public/public_head.css">
 <link rel="stylesheet" href="/Public/Home/css/style.css">
 <link rel="stylesheet" href="/Public/Home/css/Carousel.css">
@@ -21,7 +22,7 @@ var ThinkPHP={
 		'ROOT':'',
 		'IMG':'/Public/<?php echo MODULE_NAME/img;?>',
 		'FACE':'/Public/<?php echo MODULE_NAME/face;?>',
-		'MODULE':'/Home',
+		'MODULE':'/home',
 		'UPLOADIFY':'/Public/Home/uploadify',
 		'IMAGEURL':'<?php echo U("File/image");?>',
 		'FACEURL':'<?php echo U("File/face");?>',
@@ -123,7 +124,11 @@ $(function(){
             <ul>
 
                 <?php if(is_array($result)): foreach($result as $key=>$v): ?><li>
-                    <p><a href="/Index/commitList2/did/<?php echo ($v['id']); ?>"><?php echo ($v["dataname"]); ?></a></p>
+                    <?php if($v["id"] == 10): ?><p><a href="http://rckf.qyfd.cn/tefm/index.aspx" target="_blank"><?php echo ($v["dataname"]); ?></a></p>
+
+                    <?php else: ?>
+
+                        <p><a href="/Index/commitList2/did/<?php echo ($v['id']); ?>"><?php echo ($v["dataname"]); ?></a></p><?php endif; ?>
                 </li><?php endforeach; endif; ?>
 
 

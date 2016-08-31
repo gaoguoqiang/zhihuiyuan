@@ -18,7 +18,7 @@
 	</style>
 </head>
 <body>
-	<form method="post" action="/zhihuiyuan/Admin/Login/login">
+	<form method="post" action="/Admin/Login/login">
 		<ul class="login_from">
 			<li class="title">管理员登陆</li>
 			<li class="user">

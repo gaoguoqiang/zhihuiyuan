@@ -34,7 +34,15 @@
 
                 <foreach name="result" item="v" >   
                 <li>
-                    <p><a href="__ROOT__/Index/commitList2/did/{$v['id']}">{$v.dataname}</a></p>
+                    <if condition="$v.id eq 10">
+
+                        <p><a href="http://rckf.qyfd.cn/tefm/index.aspx" target="_blank">{$v.dataname}</a></p>
+
+                    <else />
+
+                        <p><a href="__ROOT__/Index/commitList2/did/{$v['id']}">{$v.dataname}</a></p>
+
+                    </if>
                 </li> 
                 </foreach>
 

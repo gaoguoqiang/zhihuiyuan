@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="__CSS__/36.css">
     <script src="__JS__/distpicker.data.js"></script>
     <script src="__JS__/distpicker.js"></script>
-    <script src="__JS__/36.js"></script>
 </block>
 <block name="main">
     <div id="content" class="clear">
@@ -68,7 +67,7 @@
 
 
             <else/>
-                <li>
+                <li style="padding:6px;">
                     {$content.infoname}
                 </li> 
 
@@ -79,11 +78,31 @@
             </ul>
         </div>
         <div class="article_main">
-           <empty name="matter">
-            {$matter1} 
-            <else/>
-            {$matter} 
+            <?php 
+
+            if($cont){
+
+                echo $cont;
+
+            }else{
+
+        ?>
+
+       <empty name="matter">
+
+        {$matter1} 
+
+        <else/>
+
+        {$matter} 
+
         </empty>
+
+        <?php 
+
+            }
+
+        ?>
         </div>
         </div>
     </div>

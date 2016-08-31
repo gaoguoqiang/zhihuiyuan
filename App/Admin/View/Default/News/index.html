@@ -1,4 +1,5 @@
 <include file="Public/header" /> 
+<script src="__JS__/show.js"></script>
 	<div class="contain_main">
 		<form action="__ROOT__/Admin/News/update" method="post">
 			<table border="1" align="center" id="abc">
@@ -21,11 +22,14 @@
 			</tr>
 			
 		</table>
-			<div class="text" id="content" >
-				<textarea id="editor_id" name="content" style="width:700px;height:300px;">
-					我是初始化内容！！！	
-				</textarea>
-			</div>
+			<!-- 加载编辑器的容器 -->
+		    <script id="container" name="content" type="text/plain">
+		    </script>
+		    <!-- 配置文件 -->
+		    <script type="text/javascript" src="__JS__/ueditor-1.4.3.3/ueditor.config.js"></script>
+		    <!-- 编辑器源码文件 -->
+		    <script type="text/javascript" src="__JS__/ueditor-1.4.3.3/ueditor.all.js"></script>
+
 			<input type="submit" value="确认提交">
 			
 		</form>
@@ -35,12 +39,14 @@
 </div>
 <script charset="utf-8" src="__JS__/text/kindeditor.js"></script>
 <script charset="utf-8" src="__JS__/text/lang/zh_CN.js"></script>
-<script>
-        KindEditor.ready(function(K) {
-                	window.editor = K.create('#editor_id');
-        });
+		    <!-- 实例化编辑器 -->
+		    <script type="text/javascript">
+		        var ue = UE.getEditor('container',{
+					initialFrameHeight:500,
+					autoHeightEnabled:false,
+					maximumWords:20000
+				});
+		    </script>
 
-</script>
-<script src="__JS__/show.js"></script>
 </body>
 </html>

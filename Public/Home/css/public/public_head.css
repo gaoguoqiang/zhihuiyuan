@@ -3,7 +3,7 @@
 
 body, p, a, ul, li, dl, dt, dd, span, img, h1, h2, h3, h4, input, textarea, select { margin: 0; padding: 0; }
 body { background: #fefefe; font-family: "微软雅黑"; }
-img { display: block; border: none; }
+img {border: none; }
 ul, li { list-style: none; }
 a { text-decoration: none; color: #666; }
 input, textarea, select { outline: medium; }

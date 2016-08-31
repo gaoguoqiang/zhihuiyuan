@@ -61,6 +61,20 @@ class IndexController extends HomeController {
 		    		$title2 = M('36serves')->where("id = ".$_GET['id'])->find();
 		    		$title3 = M('36info')->where("sid = ".$_GET['id'])->order('id desc')->find();
 		    	}
+				
+				
+				
+				//一级分类下的默认文章显示
+
+				if(count($_GET)==1 && $_GET['nid'] != ''){
+
+					$cont = M('36info')->where('sid = '.$_GET['nid'])->find();
+
+					$cont = htmlspecialchars_decode($cont['content']);
+
+					$this->assign('cont',$cont);
+
+				}
 
 		    	
 		    	/*if(!$_GET['id']){
@@ -70,7 +84,6 @@ class IndexController extends HomeController {
 
 		    	/*//三级目录下的文章列表
 				$threeList = M('36info')->where("sid = ".$_GET['id'])->select();*/
-				
 
 		 		//二级菜单分页显示
 				if($_GET['nid'] && $_GET['id']==''){
@@ -107,7 +120,7 @@ class IndexController extends HomeController {
 
 
 
-				$countOuto = $db->where("sid = ".$_GET['id'])->order('id desc')->find();
+				     $countOuto = $db->where("sid = ".$_GET['id'])->order('id desc')->find();
 				$id = $_GET['iId']?$_GET['iId'] : $countOuto['id'];
 				$content1 = $db->where("id = ".$id)->find();
 				$str = $content1['content'];
@@ -164,14 +177,6 @@ class IndexController extends HomeController {
 				$this->assign('matter1',$matter1);
 				$this->assign('content',$content);
 		    	$this->display('Index/36');
-
-
-
-		    	//一级分类下的默认文章显示
-				if(count($_GET)==1 && $_GET['nid'] != ''){
-					$cont = M('36info')->where('sid = '.$_GET['nid'])->find();
-					echo htmlspecialchars_decode($cont['content']);
-				}
 		    }
 		}
 

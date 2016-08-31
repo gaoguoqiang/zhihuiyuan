@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>中小企业集群运营总部</title>
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/public/public_head.css">
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/style.css">
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/Carousel.css">
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/page.css">
-<script src="/zhihuiyuan/Public/Home/js/jquery.js"></script>
-<script src="/zhihuiyuan/Public/Home/js/carousel.js"></script>
-<script src="/zhihuiyuan/Public/Home/js/index.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/Public/Home/img/logo.ico" />
+<link rel="stylesheet" href="/Public/Home/css/public/public_head.css">
+<link rel="stylesheet" href="/Public/Home/css/style.css">
+<link rel="stylesheet" href="/Public/Home/css/Carousel.css">
+<link rel="stylesheet" href="/Public/Home/css/page.css">
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/carousel.js"></script>
+<script src="/Public/Home/js/index.js"></script>
 
-<script type="text/javascript" src="/zhihuiyuan/Public/Home/js/check.js"></script>
+<script type="text/javascript" src="/Public/Home/js/check.js"></script>
 <script type="text/javascript">
 	function hint(){
 		alert("非VIP会员禁止查看！");
@@ -20,11 +21,11 @@
 
 <script type="text/javascript">
 var ThinkPHP={
-		'ROOT':'/zhihuiyuan',
-		'IMG':'/zhihuiyuan/Public/<?php echo MODULE_NAME/img;?>',
-		'FACE':'/zhihuiyuan/Public/<?php echo MODULE_NAME/face;?>',
-		'MODULE':'/zhihuiyuan/Home',
-		'UPLOADIFY':'/zhihuiyuan/Public/Home/uploadify',
+		'ROOT':'',
+		'IMG':'/Public/<?php echo MODULE_NAME/img;?>',
+		'FACE':'/Public/<?php echo MODULE_NAME/face;?>',
+		'MODULE':'/home',
+		'UPLOADIFY':'/Public/Home/uploadify',
 		'IMAGEURL':'<?php echo U("File/image");?>',
 		'FACEURL':'<?php echo U("File/face");?>',
 		'BIGFACE':'<?php echo session("user_auth")["face"]->big;?>',
@@ -42,18 +43,18 @@ var ThinkPHP={
 <div id="header">
 	<div class="header_center">
 		<h1 id="logo">
-			<a href="/zhihuiyuan/Index/index"><img src="/zhihuiyuan/Public/Home/img/logo.png" alt="智慧方略管理顾问有限公司"></a>
+			<a href="/Index/index"><img src="/Public/Home/img/logo.png" alt="智慧方略管理顾问有限公司"></a>
 		</h1>
-		<?php if(empty($user)): ?><p class="header_info">您好，请【<a href="javascript:;" id="login" class="active">登录</a>】【<a href="/zhihuiyuan/Reg/index" id="reg">注册</a>】</p>
+		<?php if(empty($user)): ?><p class="header_info">您好，请【<a href="javascript:;" id="login" class="active">登录</a>】【<a href="/Reg/index" id="reg">注册</a>】</p>
 		<?php else: ?>
-			<p class="header_info">尊敬的	<font style="color:#049"><?php echo ($user); ?></font>	您好!  【<a href="/zhihuiyuan/Personage/index">个人中心</a>】【<a href="/zhihuiyuan/Login/logout">退出登录</a>】</p><?php endif; ?>
+			<p class="header_info">尊敬的	<font style="color:#049"><?php echo ($user); ?></font>	您好!  【<a href="/Personage/index">个人中心</a>】【<a href="/Login/logout">退出登录</a>】</p><?php endif; ?>
 	</div>
 	
 </div>
 <div id="logon">
 	<div class="warp"></div>
 	<div>
-		<form action="/zhihuiyuan/Login/login" method="post">
+		<form action="/Login/login" method="post">
 			<p class="logon_title">账户登录</p>
 			<span class="close"></span>
 			<input type="text" name="user" value="用户名">
@@ -99,7 +100,7 @@ $(function(){
 		
 </script>
 <!-- 头部结束 -->
-<!-- <script src="/zhihuiyuan/Public/Home/js/reg/reg.js"></script> -->
+<!-- <script src="/Public/Home/js/reg/reg.js"></script> -->
 
 
 <div id="main">
@@ -115,31 +116,31 @@ $(function(){
 			</div>
 			<div class="banner">
 				<ul class="nav_top">
-					<li><a class="active" href="/zhihuiyuan/Index/index">首页</a></li>
-					<li><a href="/zhihuiyuan/Company/index">企业百科</a></li>
-					<li><a href="/zhihuiyuan/News/index">集群动态区</a></li>
+					<li><a href="/Company/index">企业百科</a></li>
+					<li><a href="/News/index">集群动态区</a></li>
 					<li><a href="#">讨论区</a></li>
-					<li><a href="/zhihuiyuan/Contact/index">联系我们</a></li>
+					<li><a href="/Contact/index">联系我们</a></li>
+					<li><a href="http://www.jqhmjd.com">进入官网</a></li>
 				</ul>
 				<div class="banner_pic">
 					<ul class="banner_pic_list">
 						<li>
-							<a href="javascript:;"><img src="/zhihuiyuan/Public/Home/img/1.png" alt=""></a>
+							<a href="javascript:;"><img src="/Public/Home/img/1.png" alt=""></a>
 						</li>
 						<li>
-							<a href="javascript:;"><img src="/zhihuiyuan/Public/Home/img/2.png" alt=""></a>
+							<a href="javascript:;"><img src="/Public/Home/img/2.png" alt=""></a>
 						</li>
 						<li>
-							<a href="javascript:;"><img src="/zhihuiyuan/Public/Home/img/3.jpg" alt=""></a>
+							<a href="javascript:;"><img src="/Public/Home/img/3.jpg" alt=""></a>
 						</li>
 						<li>
-							<a href="javascript:;"><img src="/zhihuiyuan/Public/Home/img/4.png" alt=""></a>
+							<a href="javascript:;"><img src="/Public/Home/img/4.png" alt=""></a>
 						</li>
 						<li>
-							<a href="javascript:;"><img src="/zhihuiyuan/Public/Home/img/5.jpg" alt=""></a>
+							<a href="javascript:;"><img src="/Public/Home/img/5.jpg" alt=""></a>
 						</li>
 						<li>
-							<a href="javascript:;"><img src="/zhihuiyuan/Public/Home/img/6.png" alt=""></a>
+							<a href="javascript:;"><img src="/Public/Home/img/6.png" alt=""></a>
 						</li>
 					</ul>
 					<div class="banner_pic_nav">
@@ -165,14 +166,14 @@ $(function(){
 				<ul class="pic_list">
 					<?php if(is_array($datas)): foreach($datas as $key=>$v): if($v["id"] == 1): ?><li>
 								<a href="http://www.zady.cn/aqpt" target="_blank">
-									<img src="/zhihuiyuan/Uploads/datas/<?php echo ($v["pic"]); ?>.png" alt="">
+									<img src="/Uploads/datas/<?php echo ($v["pic"]); ?>.png" alt="">
 									<p><?php echo ($v["dataname"]); ?></p>
 								</a>
 							</li>
 						<?php else: ?>
 							<li>
-								<a href="/zhihuiyuan/Index/commitList2/id/<?php echo ($v["id"]); ?>">
-									<img src="/zhihuiyuan/Uploads/datas/<?php echo ($v["pic"]); ?>.png" alt="">
+								<a href="/Index/commitList2/id/<?php echo ($v["id"]); ?>">
+									<img src="/Uploads/datas/<?php echo ($v["pic"]); ?>.png" alt="">
 									<p><?php echo ($v["dataname"]); ?></p>
 								</a>
 							</li><?php endif; endforeach; endif; ?>				
@@ -202,7 +203,7 @@ $(function(){
 		        <ul class="poster-list">
 
 
-		        <?php if(is_array($datas2)): foreach($datas2 as $key=>$v): ?><li class="poster-item"><a href="/zhihuiyuan/Index/commitList2/id/<?php echo ($v["id"]); ?>"><img src="/zhihuiyuan/Uploads/datas/<?php echo ($v["pic"]); ?>.png" width="100%" height="100%"></a></li><?php endforeach; endif; ?>
+		        <?php if(is_array($datas2)): foreach($datas2 as $key=>$v): ?><li class="poster-item"><a href="/Index/commitList2/id/<?php echo ($v["id"]); ?>"><img src="/Uploads/datas/<?php echo ($v["pic"]); ?>.png" width="100%" height="100%"></a></li><?php endforeach; endif; ?>
 		            
 		        </ul>
 		    </div>
@@ -220,58 +221,58 @@ $(function(){
 			<div style="height: 500px;"></div>
 			<div class="policy_pic policy_pic1 clear">
 				<div class="pic pic1">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zc1.jpg" alt="政策扶持"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/zc1.jpg" alt="政策扶持"></a>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zc2.jpg" alt="政府重要公告"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zc2.jpg" alt="政府重要公告"></a>
 					</div>
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zc3.jpg" alt="劳工关系"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zc3.jpg" alt="劳工关系"></a>
 					</div>
 				</div>
 			</div>
 			<div class="policy_pic policy_pic2 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zw1.jpg" alt="中小微企业类型证明办理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zw1.jpg" alt="中小微企业类型证明办理"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zw2.jpg" alt="营业执照办理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zw2.jpg" alt="营业执照办理"></a>
 					</div>
 				</div>
 				<div class="pic_center">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zw3.jpg" alt="中小企业生产经营运行监测"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zw3.jpg" alt="中小企业生产经营运行监测"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zw4.jpg" alt="组织机构代码办理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zw4.jpg" alt="组织机构代码办理"></a>
 					</div>
 					<div class="pic pic5">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zw5.jpg" alt="税务登记办理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zw5.jpg" alt="税务登记办理"></a>
 					</div>
 				</div>
 			</div>
 			<div class="policy_pic policy_pic3 clear">
 				<div class="pic pic1">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zj1.jpg" alt="国家项目资金"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/zj1.jpg" alt="国家项目资金"></a>
 				</div>
 				<div class="pic pic2">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zj2.jpg" alt="项目资助"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/zj2.jpg" alt="项目资助"></a>
 				</div>
 			</div>
 			<div class="policy_pic policy_pic4 clear">
 				<div class="pic pic1">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/js1.jpg" alt="高新企业"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/js1.jpg" alt="高新企业"></a>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/js2.jpg" alt="小微企业"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/js2.jpg" alt="小微企业"></a>
 					</div>
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/js3.jpg" alt="双软认证企业"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/js3.jpg" alt="双软认证企业"></a>
 					</div>
 				</div>
 			</div>
@@ -289,85 +290,85 @@ $(function(){
 			<div class="association_pic association_pic1 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zl1.jpg" alt="机械展"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zl1.jpg" alt="机械展"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zl2.jpg" alt="珠宝展"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zl2.jpg" alt="珠宝展"></a>
 					</div>
 				</div>
 				<div class="pic_center">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zl3.jpg" alt="电子装备产业博览"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zl3.jpg" alt="电子装备产业博览"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zl4.jpg" alt="家具展"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zl4.jpg" alt="家具展"></a>
 					</div>
 					<div class="pic pic5">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zl5.jpg" alt="钟表展"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zl5.jpg" alt="钟表展"></a>
 					</div>
 				</div>
 			</div>
 			<div class="association_pic association_pic2 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/px1.jpg" alt="政策辅导"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/px1.jpg" alt="政策辅导"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/px2.jpg" alt="创业培训"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/px2.jpg" alt="创业培训"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/px3.jpg" alt="行业辅导"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/px3.jpg" alt="行业辅导"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/px4.jpg" alt="网络营销培训"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/px4.jpg" alt="网络营销培训"></a>
 					</div>
 				</div>
 			</div>
 			<div class="association_pic association_pic3 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ts1.jpg" alt="双软认证"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ts1.jpg" alt="双软认证"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ts2.jpg" alt="监测仪器"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ts2.jpg" alt="监测仪器"></a>
 					</div>
 				</div>
 				<div class="pic_center">
 					<div class="pic 双软认证">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ts3.jpg" alt="3D打印"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ts3.jpg" alt="3D打印"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ts4.jpg" alt="研发设计"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ts4.jpg" alt="研发设计"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic5">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ts5.jpg" alt="3D展厅"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ts5.jpg" alt="3D展厅"></a>
 					</div>
 					<div class="pic pic6">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ts6.jpg" alt="物流"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ts6.jpg" alt="物流"></a>
 					</div>
 				</div>
 			</div>
 			<div class="association_pic association_pic4 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/hy1.jpg" alt="LED行业研究"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/hy1.jpg" alt="LED行业研究"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/hy2.jpg" alt="3D行业研究"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/hy2.jpg" alt="3D行业研究"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/hy3.jpg" alt="新材料行业研究"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/hy3.jpg" alt="新材料行业研究"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/hy4.jpg" alt="电子信息化行业"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/hy4.jpg" alt="电子信息化行业"></a>
 					</div>
 				</div>
 			</div>
@@ -384,72 +385,72 @@ $(function(){
 			<div class="institution_pic institution_pic1 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/tzrz1.jpg" alt="小额贷款"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/tzrz1.jpg" alt="小额贷款"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/tzrz2.jpg" alt="风险投资"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/tzrz2.jpg" alt="风险投资"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/tzrz3.jpg" alt="担保服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/tzrz3.jpg" alt="担保服务"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/tzrz4.jpg" alt="银行服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/tzrz4.jpg" alt="银行服务"></a>
 					</div>
 				</div>
 			</div>
 			<div class="institution_pic institution_pic2 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/dssc1.jpg" alt="市场营销"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/dssc1.jpg" alt="市场营销"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/dssc2.jpg" alt="技术开发"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/dssc2.jpg" alt="技术开发"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/dssc3.jpg" alt="电子商务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/dssc3.jpg" alt="电子商务"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/dssc4.jpg" alt="产品推介"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/dssc4.jpg" alt="产品推介"></a>
 					</div>
 				</div>
 			</div>
 			<div class="institution_pic institution_pic3 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/xxh1.jpg" alt="技术解决方案"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/xxh1.jpg" alt="技术解决方案"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/xxh2.jpg" alt="技术开发"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/xxh2.jpg" alt="技术开发"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/xxh3.jpg" alt="管理信息化服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/xxh3.jpg" alt="管理信息化服务"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/xxh4.jpg" alt="研发信息化服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/xxh4.jpg" alt="研发信息化服务"></a>
 					</div>
 				</div>
 			</div>
 			<div class="institution_pic institution_pic4 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/fl1.jpg" alt="无偿法律援助"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/fl1.jpg" alt="无偿法律援助"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/fl2.jpg" alt="法律文书代理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/fl2.jpg" alt="法律文书代理"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/fl3.jpg" alt="仲裁服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/fl3.jpg" alt="仲裁服务"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/fl4.jpg" alt="调节服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/fl4.jpg" alt="调节服务"></a>
 					</div>
 				</div>
 			</div>
@@ -466,50 +467,50 @@ $(function(){
 			<div class="twofuse_pic twofuse_pic1 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/jsj1.jpg" alt="通信"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/jsj1.jpg" alt="通信"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/jsj2.jpg" alt="消费类电子"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/jsj2.jpg" alt="消费类电子"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/jsj3.jpg" alt="三网融合"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/jsj3.jpg" alt="三网融合"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/jsj4.jpg" alt="数字家庭"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/jsj4.jpg" alt="数字家庭"></a>
 					</div>
 				</div>
 			</div>
 			<div class="twofuse_pic twofuse_pic2 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wlw1.jpg" alt="移动互联网"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wlw1.jpg" alt="移动互联网"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wlw2.jpg" alt="云计算"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wlw2.jpg" alt="云计算"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wlw3.jpg" alt="微信"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wlw3.jpg" alt="微信"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wlw4.jpg" alt="下一代网络"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wlw4.jpg" alt="下一代网络"></a>
 					</div>
 				</div>
 			</div>
 			<div class="twofuse_pic twofuse_pic3 clear">
 				<div class="pic pic1">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/xs1.jpg" alt="高端集成电路"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/xs1.jpg" alt="高端集成电路"></a>
 				</div>
 				<div class="pic pic2">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/xs2.jpg" alt="各类元器件"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/xs2.jpg" alt="各类元器件"></a>
 				</div>
 			</div>
 			<div class="twofuse_pic twofuse_pic4">
 				<div class="pic pic1">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/xxxt1.jpg" alt="信息系统"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/xxxt1.jpg" alt="信息系统"></a>
 				</div>
 			</div>
 		</div>
@@ -524,63 +525,63 @@ $(function(){
 			<div style="height: 500px;"></div>
 			<div class="other_pic other_pic1 clear">
 				<div class="pic pic1">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zscq1.jpg" alt="产品专利"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/zscq1.jpg" alt="产品专利"></a>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zscq2.jpg" alt="产品著作权"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zscq2.jpg" alt="产品著作权"></a>
 					</div>
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/zscq3.jpg" alt="产品认证"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/zscq3.jpg" alt="产品认证"></a>
 					</div>
 				</div>
 			</div>
 			<div class="other_pic other_pic2 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wm1.jpg" alt="报关服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wm1.jpg" alt="报关服务"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wm2.jpg" alt="出口代理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wm2.jpg" alt="出口代理"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wm3.jpg" alt="进口代理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wm3.jpg" alt="进口代理"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/wm4.jpg" alt="外贸关税代理"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/wm4.jpg" alt="外贸关税代理"></a>
 					</div>
 				</div>
 			</div>
 			<div class="other_pic other_pic3 clear">
 				<div class="pic_left">
 					<div class="pic pic1">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ck1.jpg" alt="税务服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ck1.jpg" alt="税务服务"></a>
 					</div>
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ck2.jpg" alt="审计"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ck2.jpg" alt="审计"></a>
 					</div>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ck3.jpg" alt="会计服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ck3.jpg" alt="会计服务"></a>
 					</div>
 					<div class="pic pic4">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/ck4.jpg" alt="记账服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/ck4.jpg" alt="记账服务"></a>
 					</div>
 				</div>
 			</div>
 			<div class="other_pic other_pic4 clear">
 				<div class="pic pic1">
-					<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/cd1.jpg" alt="工业园区服务"></a>
+					<a href="/Company/index"><img src="/Public/Home/img/cd1.jpg" alt="工业园区服务"></a>
 				</div>
 				<div class="pic_right">
 					<div class="pic pic2">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/cd2.jpg" alt="科技园区服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/cd2.jpg" alt="科技园区服务"></a>
 					</div>
 					<div class="pic pic3">
-						<a href="/zhihuiyuan/Company/index"><img src="/zhihuiyuan/Public/Home/img/cd3.jpg" alt="创业园区服务"></a>
+						<a href="/Company/index"><img src="/Public/Home/img/cd3.jpg" alt="创业园区服务"></a>
 					</div>
 				</div>
 			</div>

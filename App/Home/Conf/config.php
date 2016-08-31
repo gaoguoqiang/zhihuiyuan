@@ -9,7 +9,7 @@ return array(
 		'__UPLOADIFY__'=>__ROOT__.'/Public/'.MODULE_NAME.'/uploadify',	
 	),
 	//页面Trace
-	'SHOW_PAGE_TRACE'=>true,
+	'SHOW_PAGE_TRACE'=>false,
 	//COOKIE密钥
 	'COOKIE_key'=>'zhiyuiyuan',
 	//默认错误跳转对应的模板文件

@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>中小企业集群运营总部</title>
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/public/public_head.css">
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/style.css">
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/Carousel.css">
-<link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/page.css">
-<script src="/zhihuiyuan/Public/Home/js/jquery.js"></script>
-<script src="/zhihuiyuan/Public/Home/js/carousel.js"></script>
-<script src="/zhihuiyuan/Public/Home/js/index.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/Public/Home/img/logo.ico" />
+<link rel="stylesheet" href="/Public/Home/css/public/public_head.css">
+<link rel="stylesheet" href="/Public/Home/css/style.css">
+<link rel="stylesheet" href="/Public/Home/css/Carousel.css">
+<link rel="stylesheet" href="/Public/Home/css/page.css">
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/carousel.js"></script>
+<script src="/Public/Home/js/index.js"></script>
 
-    <link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/public/page_nav.css">
-    <link rel="stylesheet" href="/zhihuiyuan/Public/Home/css/36.css">
-    <script src="/zhihuiyuan/Public/Home/js/distpicker.data.js"></script>
-    <script src="/zhihuiyuan/Public/Home/js/distpicker.js"></script>
-    <script src="/zhihuiyuan/Public/Home/js/36.js"></script>
+    <link rel="stylesheet" href="/Public/Home/css/public/page_nav.css">
+    <link rel="stylesheet" href="/Public/Home/css/36.css">
+    <script src="/Public/Home/js/distpicker.data.js"></script>
+    <script src="/Public/Home/js/distpicker.js"></script>
 
 <script type="text/javascript">
 var ThinkPHP={
-		'ROOT':'/zhihuiyuan',
-		'IMG':'/zhihuiyuan/Public/<?php echo MODULE_NAME/img;?>',
-		'FACE':'/zhihuiyuan/Public/<?php echo MODULE_NAME/face;?>',
-		'MODULE':'/zhihuiyuan/Home',
-		'UPLOADIFY':'/zhihuiyuan/Public/Home/uploadify',
+		'ROOT':'',
+		'IMG':'/Public/<?php echo MODULE_NAME/img;?>',
+		'FACE':'/Public/<?php echo MODULE_NAME/face;?>',
+		'MODULE':'/home',
+		'UPLOADIFY':'/Public/Home/uploadify',
 		'IMAGEURL':'<?php echo U("File/image");?>',
 		'FACEURL':'<?php echo U("File/face");?>',
 		'BIGFACE':'<?php echo session("user_auth")["face"]->big;?>',
@@ -41,18 +41,18 @@ var ThinkPHP={
 <div id="header">
 	<div class="header_center">
 		<h1 id="logo">
-			<a href="/zhihuiyuan/Index/index"><img src="/zhihuiyuan/Public/Home/img/logo.png" alt="智慧方略管理顾问有限公司"></a>
+			<a href="/Index/index"><img src="/Public/Home/img/logo.png" alt="智慧方略管理顾问有限公司"></a>
 		</h1>
-		<?php if(empty($user)): ?><p class="header_info">您好，请【<a href="javascript:;" id="login" class="active">登录</a>】【<a href="/zhihuiyuan/Reg/index" id="reg">注册</a>】</p>
+		<?php if(empty($user)): ?><p class="header_info">您好，请【<a href="javascript:;" id="login" class="active">登录</a>】【<a href="/Reg/index" id="reg">注册</a>】</p>
 		<?php else: ?>
-			<p class="header_info">尊敬的	<font style="color:#049"><?php echo ($user); ?></font>	您好!  【<a href="/zhihuiyuan/Personage/index">个人中心</a>】【<a href="/zhihuiyuan/Login/logout">退出登录</a>】</p><?php endif; ?>
+			<p class="header_info">尊敬的	<font style="color:#049"><?php echo ($user); ?></font>	您好!  【<a href="/Personage/index">个人中心</a>】【<a href="/Login/logout">退出登录</a>】</p><?php endif; ?>
 	</div>
 	
 </div>
 <div id="logon">
 	<div class="warp"></div>
 	<div>
-		<form action="/zhihuiyuan/Login/login" method="post">
+		<form action="/Login/login" method="post">
 			<p class="logon_title">账户登录</p>
 			<span class="close"></span>
 			<input type="text" name="user" value="用户名">
@@ -98,23 +98,23 @@ $(function(){
 		
 </script>
 <!-- 头部结束 -->
-<!-- <script src="/zhihuiyuan/Public/Home/js/reg/reg.js"></script> -->
+<!-- <script src="/Public/Home/js/reg/reg.js"></script> -->
 
 
 <div id="main">
 	
     <div id="content" class="clear">
         <div class="page_nav">
-            <a class="index" href="/zhihuiyuan/Index/index">首页</a>
+            <a class="index" href="/Index/index">首页</a>
             <span>&gt;</span>
 
             <?php if(empty($title)): ?><span></span>
             <?php else: ?>
-            <a class="now_page" href="/zhihuiyuan/Index/commitList1/nid/<?php echo ($title["id"]); ?>"><?php echo ($title["36name"]); ?></a><?php endif; ?>
+            <a class="now_page" href="/Index/commitList1/nid/<?php echo ($title["id"]); ?>"><?php echo ($title["36name"]); ?></a><?php endif; ?>
 
             <?php if(empty($title2)): ?><span></span>
             <?php else: ?>
-            <a class="now_page" href="/zhihuiyuan/Index/commitList1/id/<?php echo ($title2["id"]); ?>">><?php echo ($title2["36name"]); ?></a><?php endif; ?>
+            <a class="now_page" href="/Index/commitList1/id/<?php echo ($title2["id"]); ?>">><?php echo ($title2["36name"]); ?></a><?php endif; ?>
 
 
             <?php if(empty($title3)): ?><span></span>
@@ -134,11 +134,11 @@ $(function(){
             <ul>
 
                 <?php if(is_array($result)): foreach($result as $key=>$v): ?><li>
-                    <p><a href="/zhihuiyuan/Index/commitList1/id/<?php echo ($v['id']); ?>"><?php echo ($v["36name"]); ?></a></p>
+                    <p><a href="/Index/commitList1/id/<?php echo ($v['id']); ?>"><?php echo ($v["36name"]); ?></a></p>
                 </li><?php endforeach; endif; ?>
 
             <?php if(empty($content["id"])): if(is_array($result2)): foreach($result2 as $key=>$v): ?><li>
-                    <p><a href="/zhihuiyuan/Index/commitList1/iId/<?php echo ($v['id']); ?>"><?php echo ($v["infoname"]); ?></a></p>
+                    <p><a href="/Index/commitList1/iId/<?php echo ($v['id']); ?>"><?php echo ($v["infoname"]); ?></a></p>
                 </li><?php endforeach; endif; ?>
                 <div class="page">
                 <table class="pages">
@@ -150,7 +150,7 @@ $(function(){
 
 
             <?php else: ?>
-                <li>
+                <li style="padding:6px;">
                     <?php echo ($content["infoname"]); ?>
                 </li><?php endif; ?>
             
@@ -159,9 +159,15 @@ $(function(){
             </ul>
         </div>
         <div class="article_main">
-           <?php if(empty($matter)): echo ($matter1); ?> 
-            <?php else: ?>
-            <?php echo ($matter); endif; ?>
+            <?php  if($cont){ echo $cont; }else{ ?>
+
+       <?php if(empty($matter)): echo ($matter1); ?> 
+
+        <?php else: ?>
+
+        <?php echo ($matter); endif; ?>
+
+        <?php  } ?>
         </div>
         </div>
     </div>

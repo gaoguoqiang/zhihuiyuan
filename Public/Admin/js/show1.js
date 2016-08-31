@@ -1,6 +1,6 @@
+$(function(){
 
-
-	$('#xnews').on('change',function(){
+	$('#xnews').change(function(){
 		$.ajax({
 			url:ThinkPHP['MODULE']+'/News/show1',
 			type:'POST',
@@ -27,7 +27,7 @@
 				id:$('#x').val(),
 			},
 			success:function(data){
-				editor.html(data);
+				ue.setContent(data);
 			}
 		});
 	});		
