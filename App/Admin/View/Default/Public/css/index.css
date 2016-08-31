@@ -1,0 +1,98 @@
+@charest "UTF-8";
+
+body, ul, li, p, h4, select，input, dl, dt, dd { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+a { text-decoration: none; }
+
+body { background: #afcae8; }
+
+.clear { zoom: 1; }
+.clear:after { content: ''; display: block; clear: both; }
+
+
+#header { width: 900px; height: 105px; margin: 0 auto; background: url(../img/head_bg.jpg) no-repeat; }
+#nav, .nav_list { width: 900px; height: 27px; margin: 0 auto; background: #e4e9ec; }
+.nav_list li { float: left; width: 180px; height: 27px; line-height: 27px; text-align: center; }
+.nav_list li a { font-size: 12px; color: #295369;}
+.nav_list li ul { display: none; }
+.nav_list li ul li { background: #ccc; border-bottom: 1px solid #fff; text-align: center; }
+
+#contain { width: 900px; margin: 0 auto; background: #fff; }
+#contain .contain_nav { width: 100%; height: 25px; border-bottom: 1px solid #c3c5d1; font-size: 12px; color: #000; line-height: 25px; text-indent: 15px; }
+#contain .contain_side { float: left; width: 130px; height: 500px; background: #d4d6ff; font-size: 12px; padding: 15px 10px ; }
+/*新闻页面开始*/
+#contain .contain_main { float: left; width: 750px; height: 480px; background: url(../img/content_bg.jpg); padding-bottom: 50px; }
+#contain .contain_main label { display: block; float: left; width: 175px; height: 30px; margin-left: 10px; margin-top: 20px; }
+#contain .contain_main label span { font-size: 14px; }
+#contain .contain_main label select { width: 95px; font-size: 12px; }
+#contain .contain_main p { text-indent: 20px; margin-bottom: 20px; }
+#contain .contain_main .text { margin: 24px; }
+#contain .contain_main .news_submit { width: 90px; height: 30px; font-size: 16px; float: right; margin-right: 25px; }
+
+/*新闻页面结束*/
+
+/*分类管理页面开始*/
+#contain .contain_side { height: 341px; }
+#contain .classify_title { text-align: center; }
+#contain .classify_form { display: block; width: 556px; height: 255px; margin: 0 auto; background: rgba(255, 255, 255, 0.6); filter: alpha(opacity=50); border-radius: 10px; }
+#contain .classify_form label { width: 100%; text-align: center; margin-top: 50px; }
+#contain .classify_form label span { height: 25px; font-size: 20px; line-height: 25px; }
+#contain .classify_form label select { width: 150px; height: 25px; }
+#contain .classify_form label input { width: 50px; height: 25px; background: #fff; border: 1px solid #666; cursor: pointer; }
+/*分类管理页面结束*/
+/*修改分类页面开始*/
+#contain .alter_classify_title { text-align: center; }
+#contain .alter_classify_form { width: 556px; height: 223px; margin: 0 auto; background: rgba(255, 255, 255, 0.6); filter: alpha(opacity=50); border-radius: 10px; padding-top: 32px; }
+#contain .alter_classify_form dl { width: 465px; border: 1px solid #266e60; margin: 0 auto; border-bottom: none; text-align: center; }
+#contain .alter_classify_form dl dt, #contain .alter_classify_form dl dd { width: 100%; height: 28px; border-bottom: 1px solid #266e60; line-height: 28px; }
+#contain .alter_classify_form dl dt { height: 43px; line-height: 43px; }
+#contain .alter_classify_form dl div { float: left; width: 154px; height: 28px; border-right: 1px solid #266e60; }
+#contain .alter_classify_form dl dt div { height: 43px; }
+#contain .alter_classify_form span { float: left; width: 77px; height: 28px; background: #b6e3dc; text-align: center; cursor: pointer; }
+#contain .alter_classify_form span.active { background: #dcf5f1; }
+#contain .alter_classify_form .alter_btn { border-right: 1px solid #fff; }
+#contain .alter_classify_form .text { display: none; float: left; width: 154px; height: 28px; margin: 0; padding: 0;border: none; border-right: 1px solid #266e60; background: #fff; text-indent: 4px; }
+#contain .classify_page_btn .next, #contain .classify_page_btn .prev { float: left; width:200px; height: 22px; margin-top: 30px; border-radius: 11px; background: #7cd4c6; text-align: center; line-height: 22px; font-size: 14px; cursor: pointer; }
+#contain .classify_page_btn .next { float: right; margin-right: 150px; }
+#contain .classify_page_btn .prev { margin-left: 150px; }
+#contain .page_btn .active {background: #dcf5f1; }
+/*修改分类页面结束*/
+
+/*用户管理页面开始*/
+#contain .users_manage_title { text-align: center; }
+#contain .users_manage_form { width: 556px; height: 223px; margin: 0 auto; background: rgba(255, 255, 255, 0.6); filter: alpha(opacity=50); border-radius: 10px; padding-top: 32px; }
+#contain .users_manage_form div { float: left; width: 278px; }
+#contain .users_manage_form div h4 { width: 108px; height: 26px; background: #7cd4c6; margin: 0 auto 28px; text-align: center; line-height: 26px; }
+#contain .users_manage_form ul { width: 196px; border: 1px solid #000; border-bottom: none; margin: 0 auto; }
+#contain .users_manage_form ul li { width: 100%; height: 33px; border-bottom: 1px solid #000; line-height: 33px; text-align: center; }
+#contain .users_page_btn { width: 476px; margin: 30px auto 0; }
+#contain .users_page_btn div { float: left; width: 196px; height: 22px; }
+#contain .users_page_btn div span { float: left; width: 97px; height: 22px; border-radius: 11px; background: #7cd4c6; text-align: center; line-height: 22px; font-size: 14px; cursor: pointer; }
+#contain .users_page_btn .member_page { float: right; }
+#contain .users_page_btn div .next { float: right; }
+
+/*用户管理页面结束*/
+/*用户信息页面开始*/
+#contain .users_info_title { text-align: center; }
+#contain .users_info_form { width: 556px; height: 223px; margin: 0 auto; background: rgba(255, 255, 255, 0.6); filter: alpha(opacity=50); border-radius: 10px; padding-top: 32px; }
+#contain .users_info_form ul { width: 410px; margin: 0 auto; }
+#contain .users_info_form ul li { width: 100%; height: 25px; }
+#contain .users_info_form ul li strong { float: left; font-size: 16px; margin-right: 4px; }
+#contain .users_info_form ul li div { float: left; width: 200px; height: 20px; border: 1px solid #666; text-align: center; line-height: 20px; }
+#contain .users_info_form ul li span { float: left; width: 56px; height: 14px; margin-left: 10px; margin-top: 5px; font-size: 12px; text-align: center; line-height: 14px; background: #7bd3c5; cursor: pointer; }
+#contain .users_info_form .user_text { display: none; float: left; width: 200px; height: 20px; border: 1px solid #666; }
+#contain .users_info_form .cancel { display: none; }
+#contain .users_info_form span.active { background: #dcf5f1; }
+
+/*用户信息页面结束*/
+
+
+
+
+
+
+
+
+
+
+

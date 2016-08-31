@@ -1,0 +1,77 @@
+<extend name="Base/common" />
+<block name="head">
+    <link rel="stylesheet" href="__CSS__/public/page_nav.css">
+    <link rel="stylesheet" href="__CSS__/personal_center.css">
+</block>
+<block name="main">
+    <!-- 头部结束 -->
+    <div id="content" class="clear">
+        <div class="page_nav">
+            <a class="index" href="__ROOT__/Index/index">首页</a>
+            <span>&gt;</span>
+            <a class="now_page" href="__ROOT__/Personage/index">个人中心</a>
+        </div>
+        <div class="main_left">
+
+
+        <empty name="result2.face">
+            <div class="head_pic"><img src="__IMG__/default_head_man.png" style="width:100%;height:100%;" /></div>
+        <else/>
+            <div class="head_pic"><img src="__ROOT__/Uploads/{$result2.face}" style="width:100%;height:100%;"/></div>
+        </empty>
+            
+            <if condition="$result.vip eq 1">
+            <img class="vip" src="__IMG__/vip.png" style="margin:0 auto;">
+            <else/>
+            <img class="vip" src="__IMG__/vip_king.png" style="margin:0 auto;">
+            </if>
+
+            <p>积分：<span>2222</span></p>
+            <a class="user_info" href="__ROOT__/Personage/orgData">完善个人资料</a>
+            <a class="money" href="#">充值</a>
+        </div>
+        <div class="main_right">
+            <ul class="lecturer_info">
+                <li class="clear">
+                    <span>姓名：</span>
+                    <p>{$result.user}</p>
+                </li>
+                <li class="clear">
+                    <span>性别：</span>
+                    <p>{$result.sex}</p>
+                </li>
+                <li class="clear">
+                    <span>地址：</span>
+                    <p>{$result2.add}</p>
+                </li>
+                <li class="clear">
+                    <span>擅长领域：</span>
+                    <p>{$result2.field}</p>
+                </li>
+                <li class="clear">
+                    <span>技术特长：</span>
+                    <p>{$result2.technology}</p>
+                </li>
+                 <li class="clear">
+                    <span>职位：</span>
+                    <p>
+                    <foreach name="arr" item="v" >
+                    <span>{$v}&nbsp;&nbsp;&nbsp;</span>
+                    </foreach>
+                    </p>
+                </li>
+            </ul>
+            <p class="intro">
+                <span>个人简介：</span>
+                {$result2.introduction}
+            </p>
+            <div style="background: #000;">
+                <video width="594" height="400" controls>
+                <source src="321.mp4" type="video/mp4">
+                <object data="321.mp4" width="594" height="300"></object> 
+                </video>
+            </div>
+            
+        </div>
+    </div>
+</block>

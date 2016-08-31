@@ -1,0 +1,29 @@
+
+.main_left { float: left; width: 380px; margin: 0 40px 0 0; text-align: center; }
+.main_left .head_pic { width: 148px; height: 148px; border-radius: 74px; background: url(../img/default_head_man.png) no-repeat; background-size: contain; margin: 60px auto; }
+.main_left p { font-size: 30px; color: #000; margin: 0 auto; }
+.main_left a { display: block; width: 240px; height: 66px; border-radius: 10px; background: #32a6fd; font-size: 36px; color: #fff; line-height: 66px; text-align: center; margin: 220px auto 31px; }
+.main_left .map { width: 376px; height: 496px; border: 2px solid #3f3f3f; border-radius: 16px; overflow: hidden; }
+
+.main_right { float: right; width: 594px; margin-right: 40px; }
+.main_right .lecturer_info li { font-size: 30px;color: #000; line-height: 38px; }
+.main_right .lecturer_info li span { float: left; }
+.main_right .lecturer_info li p { float: left; width: 440px; font-size: 24px; color: #666; }
+.main_right .intro { width: 530px; padding: 30px; border: 2px solid #7f7f7f; border-radius: 10px; font-size: 24px; color: #000; margin-top: 60px; margin-bottom: 40px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

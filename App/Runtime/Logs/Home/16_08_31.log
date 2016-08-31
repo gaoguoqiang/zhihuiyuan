@@ -1,0 +1,445 @@
+[ 2016-08-31T09:36:07+08:00 ] 127.0.0.1 /zhihuiyuan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001380s ]
+
+[ 2016-08-31T09:57:34+08:00 ] 127.0.0.1 /zhihuiyuan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-08-31T09:57:46+08:00 ] 127.0.0.1 /zhihuiyuan/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2016-08-31T10:35:47+08:00 ] 127.0.0.1 /zhihuiyuan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+
+[ 2016-08-31T10:35:47+08:00 ] 127.0.0.1 /zhihuiyuan/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-08-31T10:36:11+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-31T10:36:40+08:00 ] 127.0.0.1 /zhihuiyuan/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2016-08-31T10:38:35+08:00 ] 127.0.0.1 /zhihuiyuan/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+
+[ 2016-08-31T10:38:36+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-08-31T10:38:37+08:00 ] 127.0.0.1 /zhihuiyuan/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-08-31T10:38:38+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-08-31T10:38:40+08:00 ] 127.0.0.1 /zhihuiyuan/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2016-08-31T10:38:42+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/id/201/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-08-31T10:41:02+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/id/201/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-08-31T10:41:05+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/id/201/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2016-08-31T10:41:06+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/id/201/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2016-08-31T10:41:06+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/id/201/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-08-31T10:41:07+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/id/201/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2016-08-31T10:41:08+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/id/201/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-08-31T10:41:10+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-08-31T11:07:39+08:00 ] 127.0.0.1 /zhihuiyuan/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-08-31T11:07:41+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2016-08-31T11:07:46+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-08-31T11:08:06+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-08-31T11:08:18+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001063s ]
+
+[ 2016-08-31T11:11:21+08:00 ] 127.0.0.1 /zhihuiyuan/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-08-31T11:11:24+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-08-31T11:11:28+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-08-31T11:11:30+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-08-31T11:11:35+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+
+[ 2016-08-31T11:12:06+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001226s ]
+
+[ 2016-08-31T11:12:28+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-08-31T11:12:32+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2016-08-31T11:12:44+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-08-31T11:26:00+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+
+[ 2016-08-31T11:26:00+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: [8] Undefined index: user D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\HomeController.class.php 第 9 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 41 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 120 行.
+SQL: DESCRIBE si_36info [ RunTime:0.003264s ]
+NOTIC: [8] Undefined index: iId D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1   [ RunTime:0.000090s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1  
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: title2 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 162 行.
+NOTIC: [8] Undefined variable: title3 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 163 行.
+NOTIC: [8] Undefined variable: toList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 164 行.
+NOTIC: [8] Undefined variable: content1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 165 行.
+NOTIC: [8] Undefined variable: threeList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 166 行.
+NOTIC: [8] Undefined variable: matter1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [8] Use of undefined constant face - assumed 'face' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 29 行.
+NOTIC: [8] Undefined variable: result D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 136 行.
+NOTIC: [8] Undefined variable: result2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 140 行.
+NOTIC: [8] Undefined variable: show D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+NOTIC: [8] Undefined variable: show2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-08-31T11:26:23+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-08-31T11:26:23+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: user D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\HomeController.class.php 第 9 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 41 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 120 行.
+SQL: DESCRIBE si_36info [ RunTime:0.004122s ]
+NOTIC: [8] Undefined index: iId D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1   [ RunTime:0.000181s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1  
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: title2 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 162 行.
+NOTIC: [8] Undefined variable: title3 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 163 行.
+NOTIC: [8] Undefined variable: toList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 164 行.
+NOTIC: [8] Undefined variable: content1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 165 行.
+NOTIC: [8] Undefined variable: threeList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 166 行.
+NOTIC: [8] Undefined variable: matter1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [8] Use of undefined constant face - assumed 'face' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 29 行.
+NOTIC: [8] Undefined variable: result D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 136 行.
+NOTIC: [8] Undefined variable: result2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 140 行.
+NOTIC: [8] Undefined variable: show D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+NOTIC: [8] Undefined variable: show2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-08-31T11:30:18+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+
+[ 2016-08-31T11:30:19+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined index: user D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\HomeController.class.php 第 9 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 41 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 93 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 116 行.
+SQL: DESCRIBE si_36info [ RunTime:0.003096s ]
+NOTIC: [8] Undefined index: iId D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 148 行.
+SQL: SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1   [ RunTime:0.000104s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1  
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 157 行.
+NOTIC: [8] Undefined variable: title2 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 158 行.
+NOTIC: [8] Undefined variable: title3 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 159 行.
+NOTIC: [8] Undefined variable: toList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 160 行.
+NOTIC: [8] Undefined variable: content1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: threeList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 162 行.
+NOTIC: [8] Undefined variable: matter1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 164 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [8] Use of undefined constant face - assumed 'face' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 29 行.
+NOTIC: [8] Undefined variable: result D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 136 行.
+NOTIC: [8] Undefined variable: result2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 140 行.
+NOTIC: [8] Undefined variable: show D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+NOTIC: [8] Undefined variable: show2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-08-31T11:30:27+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-08-31T11:30:27+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: user D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\HomeController.class.php 第 9 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 41 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 93 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 116 行.
+SQL: DESCRIBE si_36info [ RunTime:0.003992s ]
+NOTIC: [8] Undefined index: iId D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 148 行.
+SQL: SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1   [ RunTime:0.000235s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1  
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 157 行.
+NOTIC: [8] Undefined variable: title2 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 158 行.
+NOTIC: [8] Undefined variable: title3 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 159 行.
+NOTIC: [8] Undefined variable: toList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 160 行.
+NOTIC: [8] Undefined variable: content1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: threeList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 162 行.
+NOTIC: [8] Undefined variable: matter1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 164 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [8] Use of undefined constant face - assumed 'face' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 29 行.
+NOTIC: [8] Undefined variable: result D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 136 行.
+NOTIC: [8] Undefined variable: result2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 140 行.
+NOTIC: [8] Undefined variable: show D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+NOTIC: [8] Undefined variable: show2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-08-31T11:30:32+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1/nid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-08-31T11:30:33+08:00 ] 127.0.0.1 /zhihuiyuan/Index/commitList1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] Undefined index: user D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\HomeController.class.php 第 9 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 39 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 41 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined index: nid D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 93 行.
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 116 行.
+SQL: DESCRIBE si_36info [ RunTime:0.004160s ]
+NOTIC: [8] Undefined index: iId D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 148 行.
+SQL: SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1   [ RunTime:0.000121s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `si_36info` WHERE ( id =  ) LIMIT 1  
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 157 行.
+NOTIC: [8] Undefined variable: title2 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 158 行.
+NOTIC: [8] Undefined variable: title3 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 159 行.
+NOTIC: [8] Undefined variable: toList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 160 行.
+NOTIC: [8] Undefined variable: content1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: threeList D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 162 行.
+NOTIC: [8] Undefined variable: matter1 D:\xampp\htdocs\zhihuiyuan\App\Home\Controller\IndexController.class.php 第 164 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 23 行.
+NOTIC: [8] Use of undefined constant face - assumed 'face' D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 29 行.
+NOTIC: [8] Undefined variable: result D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 136 行.
+NOTIC: [8] Undefined variable: result2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 140 行.
+NOTIC: [8] Undefined variable: show D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+NOTIC: [8] Undefined variable: show2 D:\xampp\htdocs\zhihuiyuan\App\Runtime\Cache\Home\2331e9b0b605a577dea95ca6196a71dd.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+

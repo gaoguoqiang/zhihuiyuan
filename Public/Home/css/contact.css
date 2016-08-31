@@ -1,0 +1,25 @@
+
+
+
+.main_left { float: left; width: 400px; height: 200px; background: #fff; margin-left: 50px; }
+.main_left .company_info li { font-size: 20px; color: #000; line-height: 35px; letter-spacing: 1px; font-family: arial,"微软雅黑"; }
+
+
+.main_right { float: right; width: 650px; margin-right: 50px; }
+#container { width: 650px; height: 500px; }
+.qq { width: 800px; margin: 0 auto; }
+.qq span { float: left; margin: 20px; font-size: 20px; color: #000; }
+.qq a { float: left; margin: 20px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
