@@ -20,6 +20,7 @@
 			<div class="text">
 				<!-- 加载编辑器的容器 -->
 		    <script id="container" name="content" type="text/plain">
+		        这里写你的初始化内容
 		    </script>
 		    <!-- 配置文件 -->
 		    <script type="text/javascript" src="__JS__/ueditor-1.4.3.3/ueditor.config.js"></script>
@@ -38,11 +39,7 @@
 <script charset="utf-8" src="__JS__/text/lang/zh_CN.js"></script>
 <!-- 实例化编辑器 -->
 		    <script type="text/javascript">
-		        var ue = UE.getEditor('container',{
-					initialFrameHeight:500,
-					autoHeightEnabled:false,
-					maximumWords:20000
-				});
+		        var ue = UE.getEditor('container');
 		    </script>
 </body>
 </html>

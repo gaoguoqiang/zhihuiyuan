@@ -11,7 +11,7 @@ return array(
     //数据库配置
     'DB_TYPE'=>'pdo',
     'DB_USER'=>'root',
-    'DB_PWD'=>'zhihuiyuan999',
+    'DB_PWD'=>'ROOT',
     'DB_PREFIX'=>'si_',
     'DB_DSN'=>'mysql:host=localhost;dbname=zcjl;charset=UTF8',
     //URL模式

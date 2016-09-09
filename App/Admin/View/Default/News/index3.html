@@ -1,0 +1,69 @@
+<include file="Public/header" /> 
+<script charset="utf-8" src="__JS__/check.js"></script>
+<script charset="utf-8" src="__JS__/show2.js"></script>
+	<div class="contain_main">
+		<form action="__ROOT__/Admin/News/addNews2" method="post" enctype="multipart/form-data">
+			<table border="1" align="center" class="table">
+
+			<tr>
+				<td>文章标题：</td>
+				<td>
+					<select name="nid" id="xnews" style="background-color:#85DBCE;border:0;width:200px;">
+					<option value="0">文章标题</option>
+						<foreach name="list" item="v" >
+							<option value="{$v.id}">{$v.title}</option>
+						</foreach>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>引导语：</td>
+				<td><input type="text" name="guide" style="background-color:#85DBCE;border:0;width:200px;"/></td>
+			</tr>
+			<tr>
+				<td>配图：</td>
+				<td id="content">
+					<div class="head_pic" id="head_pic">
+						<img src="__IMG__/loading_100.png" id="img" >
+					</div>
+					
+					<input type="file" class="file_pic" name="userfile" id="file" /> 
+                    
+                </td>
+			</tr>
+			</table>
+			<div class="text">
+				<!-- 加载编辑器的容器 -->
+		    <script id="container" name="content" type="text/plain">
+		        这里写你的初始化内容
+		    </script>
+		    <!-- 配置文件 -->
+		    <script type="text/javascript" src="__JS__/ueditor-1.4.3.3/ueditor.config.js"></script>
+		    <!-- 编辑器源码文件 -->
+		    <script type="text/javascript" src="__JS__/ueditor-1.4.3.3/ueditor.all.js"></script>
+			</div>
+			
+			<input type="submit" class="submit" value="确认提交">
+			
+		</form>
+		
+		
+	</div>
+</div>
+<script charset="utf-8" src="__JS__/text/kindeditor.js"></script>
+<script charset="utf-8" src="__JS__/text/lang/zh_CN.js"></script>
+<!-- 实例化编辑器 -->
+		    <script type="text/javascript">
+		        var ue = UE.getEditor('container');
+		    </script>
+<script>
+	$(function(){
+		var content = document.getElementById('content');
+	    var fileBtn = content.getElementsByTagName('input')[0];
+	    fileBtn.onchange = function(){
+	        previewImage(this);
+	    }
+	})
+</script>
+</body>
+</html>

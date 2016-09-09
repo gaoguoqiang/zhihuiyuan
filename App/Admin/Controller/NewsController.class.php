@@ -3,6 +3,9 @@ namespace Admin\Controller;
 	
 use Think\Controller;
 
+use Think\Upload;
+header('content-type:text/html;charset=utf-8');
+
 class NewsController extends Controller{
 		
 	public function index(){
@@ -15,8 +18,6 @@ class NewsController extends Controller{
         $str=getTypen();
         $this->assign('typeStr',$str);
       }
-    
-
 	   $this->display();
     }else{
       $this->error('非法访问!');
@@ -34,6 +35,25 @@ class NewsController extends Controller{
       if($_GET['aid'] == 2){
         $str=getTypen1();
         $this->assign('typeStr',$str);
+      }
+      
+
+      $this->display(); 
+    }else{
+      $this->error('非法访问!');
+    }
+  }
+
+//集群动态显示页面
+  public function index3(){
+    if($_SESSION){
+      if($_SESSION['adminuser']){
+              $this->assign('session',$_SESSION);
+          }
+      //显示列表信息
+      if($_GET['aid'] == 3){
+        $list = M('news')->select();
+        $this->assign('list',$list);
       }
       
 
@@ -83,6 +103,40 @@ class NewsController extends Controller{
           echo "<option value='{$v['id']}' class='xnews' >{$v['infoname']}</option>";
         }
       }
+    }elseif($postid){
+      $result = M('info')->where('id = '.$_POST['id'])->find();
+        echo  htmlspecialchars_decode($result['content']);
+    }
+  }
+
+
+
+
+  //集群动态显示标题及内容新闻
+  public function show2(){
+
+    if($_SESSION['adminuser']){
+            $this->assign('session',$_SESSION);
+        }
+    if($_POST['sid']){
+      $result = M('news')->where('id = '.$_POST['sid'])->find();
+      echo "<tr>
+        <td>引导语：</td>
+        <td><input type=\"text\" name=\"guide\" style=\"background-color:#85DBCE;border:0;width:200px;\"/>{$result['guide']}</td>
+      </tr>
+      <tr>
+        <td>配图：</td>
+        <td id=\"content\">
+          <div class=\"head_pic\" id=\"head_pic\">
+            <img src=\"__IMG__/loading_100.png\" id=\"img\" >
+          </div>
+          
+          <input type=\"file\" class=\"file_pic\" name=\"userfile\" id=\"file\" /> 
+                    
+                </td>
+      </tr>";
+
+      
     }elseif($postid){
       $result = M('info')->where('id = '.$_POST['id'])->find();
         echo  htmlspecialchars_decode($result['content']);
@@ -170,6 +224,17 @@ class NewsController extends Controller{
   }
 
 
+
+  //添加新闻集群动态显示
+  public function addShow2(){
+    if($_SESSION['adminuser']){
+            $this->assign('session',$_SESSION);
+        } 
+  $this->display('News/addNews3'); 
+  }
+
+
+
   //添加两化融合新闻
   public function addNews(){
     //添加两化融合新闻
@@ -221,6 +286,64 @@ class NewsController extends Controller{
         }
         $this->error('文章添加失败!',U("Admin/News/addShow1/aid/2"),2);
       }
+  }
+
+
+
+  public function addNews2(){
+
+    //添加集群动态内容
+    if(empty($_POST['title'])){
+      echo "<script type=\"text/javascript\">
+                alert('请填写文章标题!');
+              </script>";
+      exit();
+    }elseif(empty($_POST['guide'])){
+      echo "<script type=\"text/javascript\">
+                alert('请填写文章引导语!');
+              </script>";
+      exit();
+    }else{
+      if(!empty($_FILES['userfile']['name'])){
+        //头像上传
+        $upload = new Upload(); //实例化上传类
+        $upload->maxSize = 1000000; //设置上传大小，字节
+        $upload->exts =  array('jpg','gif','png','jpeg'); //限定后缀
+        $upload->savePath = './dynamic/'; //在根目录Uploads下
+        $upload->autoSub = false;//不设置子目录
+        $info = $upload->upload(); //执行上传方法
+        if (!$info) {
+            $this->error($upload->getError()); //错误了
+            exit();
+        }
+        //添加文章初始化数据
+        $data['title'] = $_POST['title'];
+        $data['pic'] = $info['userfile']['savename'];
+        $data['guide'] = $_POST['guide'];
+        $data['content'] = $_POST['content'];
+        $data['date'] = date('Y-m-d H:i:s');
+        //添加文章
+        $result = M('news')->add($data);
+        if($result){
+          $this->success('文章发表成功!');
+        }else{
+          $this->error('文章发表失败!');
+        }
+
+
+      }else{
+        echo "<script type=\"text/javascript\">
+                alert('需上传文章配图!');
+              </script>";
+      exit();
+      }
+    } 
+
+
+
+
+
+
   }
 
 
