@@ -1,0 +1,67 @@
+.form_video{
+	line-height: 3.1875rem;
+}
+
+.file_video{
+	outline: medium;
+	display: none;
+}
+
+.intro{
+	display: block;
+	width: 72.5%;
+	height: 11.5rem;
+	border: 1px solid #a9a9a9;
+	margin: 1.875rem auto 0;
+	background-color: #fff;
+	color: #a9a9a9;
+	padding: .2rem .625rem;
+	font-size: 1.8em;
+	position: relative;
+}
+.value{
+	position: absolute;
+	top: 50%;
+	margin-top: -.9em;
+	font-size: 1.8em;
+	left: 50%;
+	margin-left: -36px;
+	color: #a9a9a9;
+}
+.checkbox_info{
+	display: block;
+	width: 72.5%;
+	margin: 1.5rem auto 0;
+	color: red;
+}
+.checkbox_next{
+	display: block;
+	width: 72.5%;
+	margin: 1rem auto;
+}
+.checkbox_next span{
+	margin-right: .6rem;
+}
+.checkbox_block{
+	float: left;
+	padding-bottom: .5rem;
+}
+
+
+.reg_form .city,.reg_form .city_t{
+	display: block;
+	width: 47%;
+	height: 3.28125rem;
+	border: 1px solid #a9a9a9;
+	background-color: #fff;
+	color: #a9a9a9;
+	padding: 0 .625rem;
+	font-size: 1.6em;
+	float: left;
+}
+.citydv{
+	display: block;
+	width: 72.5%;
+	height: 3.28125rem;
+	margin: 1.875rem auto 0;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script src="js/dtree.js"></script>
+<script></script>
+</head>
+<body>
+<div id="header"></div>
+<div id="contain" class="clear">
+	<p class="contain_nav">后台管理： 管理首页</p>
+	<div class="contain_side">
+		<script  src='__PUBLIC__/Admin/Left/left.js'></script>
+		</script>
+	</div>
+	<div class="contain_main">
+		<form>
+			<label>
+				<span>一级类目：</span>
+				<select>
+					<option></option>
+				</select>
+			</label>
+			<label>
+				<span>二级类目：</span>
+				<select>
+					<option></option>
+				</select>
+			</label>
+			<label>
+				<span>三级类目：</span>
+				<select>
+					<option></option>
+				</select>
+			</label>
+			<label>
+				<span>四级类目：</span>
+				<select>
+					<option></option>
+				</select>
+			</label>
+			<p>
+				<span>新闻标题：</span>
+				<input type="text" name="title">
+			</p>
+			<div class="text">
+				<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+					我是初始化内容！！！
+				</textarea>
+			</div>
+			
+			<input type="submit" name="" value="确认提交">
+			
+		</form>
+		
+		
+	</div>
+</div>
+<script charset="utf-8" src="text/kindeditor.js"></script>
+<script charset="utf-8" src="text/lang/zh-CN.js"></script>
+<script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>
+</body>
+</html>

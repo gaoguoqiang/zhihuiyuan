@@ -1,0 +1,141 @@
+<extend name="Base/common" />
+<block name="head">
+    <link rel="stylesheet" href="__CSS__/public/page_nav.css">
+    <link rel="stylesheet" href="__CSS__/lecturer.css">
+    <script src="__JS__/distpicker.data.js"></script>
+    <script src="__JS__/distpicker.js"></script>
+</block>
+<block name="main">
+    <div id="content" class="clear">
+        <div class="page_nav">
+            <a class="index" href="__ROOT__/Index/index">首页</a>
+            <span>&gt;</span>
+            <a class="now_page" href="__ROOT__/Reteacher/index/nid/17">讲师推荐</a>
+            <div class="distpicker1">
+                <strong>按地区：</strong>
+                <select class="prov" name="prov" id="prov"></select>
+                <select class="city" name="city" id="city"></select>
+                <select style="display: none;" class="dist" name="dist" id="dist"></select>
+            </div>
+        </div>
+        <ul class="lecturer_list">
+        </ul>
+        <ul class="page"></ul>
+    </div>
+    <script>
+        $(function() {
+            $(".distpicker1").distpicker();
+            for(var i = 0; i < $('select').length; i++){
+                $('select').eq(i).find('option').eq(0).attr('selected','selected')
+            }
+            search(1)
+            //--------------------------------------------
+            /*
+                page -> 要显示的页数，必填参数，初始填“ 1 ”
+                endfn -> 回调函数 可选
+                prov -> 要查询的值，可选
+                city -> 查询省还是市， 可选
+
+
+            */
+            function search(page,endFn,prov,city){
+                $.ajax({
+                    url:ThinkPHP['MODULE']+'/Reteacher/search',
+                    success:function(data){
+                        var str = '';
+                        var b = 0;
+                        var htm = '';
+                        var data = eval('('+data+')');
+                        var imgUrl = '';
+                        for(var i in data){
+                            //------------------------------------------
+                            if(data[i][city] == prov || !prov){
+                                //-------------------------------------------
+                                if(i<page*6&&i>=(page-1)*6){
+                                    //---------------------------------
+                                    if(data[i].face == null){
+                                        //-------------
+                                        if(data[i].sex == '女'){
+                                            imgUrl = '__IMG__/default_head_wom.png';
+                                        }else{
+                                            imgUrl = '__IMG__/default_head_man.png';
+                                        }
+                                    }else{
+                                        imgUrl = '__ROOT__/Uploads/'+data[i].face;
+                                    }
+                                    str += '<li class="clear">\
+                                                <div class="head_pic" style="background-image:url('+imgUrl+')"></div>\
+                                                <ul class="lecturer_info">\
+                                                    <li class="clear">\
+                                                        <span>姓名：</span>\
+                                                        <p>'+data[i].user+'</p>\
+                                                    </li>\
+                                                    <li class="clear">\
+                                                        <span>性别：</span>\
+                                                        <p>'+data[i].sex+'</p>\
+                                                    </li>\
+                                                    <li class="clear">\
+                                                        <span>地址：</span>\
+                                                        <p>\
+                                                        <span>&nbsp;&nbsp;'+data[i].prov+'&nbsp;&nbsp;</span>\
+                                                        <span>'+data[i].city+'&nbsp;&nbsp;&nbsp;</span>\
+                                                        <span>'+data[i].dist+'&nbsp;&nbsp;&nbsp;</span>\
+                                                        </p>\
+                                                    </li>\
+                                                    <li class="clear">\
+                                                        <span>擅长领域：</span>\
+                                                        <p>'+data[i].field+'</p>\
+                                                    </li>\
+                                                    <li class="clear">\
+                                                        <span>技术特长：</span>\
+                                                        <p>'+data[i].technology+'</p>\
+                                                    </li>\
+                                                    <li class="clear">\
+                                                        <span>个人简介：</span>\
+                                                        <p>'+data[i].introduction+'</p>\
+                                                    </li>\
+                                                </ul>\
+                                                <a href="/zhihuiyuan/Reteacher/details/id/'+data[i].id+'">详情</a>\
+                                            </li>';
+                                }
+
+                                b++;
+                            }
+                        }
+                        //--------------------------------------------------------
+                        $('.lecturer_list').html(str.replace(/null/g,''));
+                        //------------------------------------------
+                        if(b>6){
+                            var num = Math.ceil(b/6);
+                            for(var i = 1; i <= num; i++){
+                                htm += '<li>'+i+'</li>';
+                            }
+                            $('.page').html(htm);
+                            var w = $('.page li').outerWidth(true);
+                            $('.page').css({'width':w*num});
+                            $('.page li').eq(page-1).addClass('active');
+                            endFn&&endFn();
+                            $('.page li').each(function(){
+                                $(this).click(function(){
+                                    search(parseInt($(this).html()),function(){},prov,city);
+                                    $('.page li').removeClass('active');
+                                    $(this).addClass('active')
+                                })
+                            })
+                        }else{
+                            $('.page').html('');
+                        }
+                    }
+                });
+            };
+            $('#prov').change(function(){
+                var prov = $(this).val();
+                search(1,function(){},prov,'prov');
+            });
+            $('#city').change(function(){
+                var prov = $(this).val();
+                search(1,function(){},prov,'city');
+            });
+        })
+    </script>
+</block>

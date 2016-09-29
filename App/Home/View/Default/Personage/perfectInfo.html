@@ -1,0 +1,156 @@
+<extend name="Base/common" />
+<block name="head">
+    <link rel="stylesheet" href="__CSS__/public/page_nav.css">
+    <link rel="stylesheet" href="__CSS__/perfectInfo.css">
+    <script src="__JS__/distpicker.data.js"></script>
+    <script src="__JS__/distpicker.js"></script>
+    <script src="__JS__/check.js"></script>
+</block>
+<block name="main">
+    <div id="content" class="clear">
+        <div class="page_nav">
+            <a class="index" href="__ROOT__/Index/index">首页</a>
+            <span>&gt;</span>
+            <a class="now_page" href="__ROOT__/Personage/index">个人中心</a>
+            <span>&gt;</span>
+            <a class="now_page" href="#">完善个人资料</a>
+        </div>
+        <div class="reg_form">
+            <form action="__ROOT__/Personage/save" method="post" enctype="multipart/form-data" onsubmit="return checksubmit('perfectInfo')">
+                <ul class="clear">
+                    <li class="form_user">
+                        <input class="text" type="text" value="{$userResulr1.user}" disabled="disabled">
+                    </li>
+                    <li  class="form_pic">
+
+                        <empty name="userResulr.face">
+                            <label>
+                            <input class="file_pic" type="file" name="face">
+                            <div id="head_pic" class="head_pic">上传头像</div>
+                        </label>
+                        <else/>
+                            <label>
+                            <input class="file_pic" type="file" name="face">
+                            <div id="head_pic" class="head_pic">
+                            <img src="__ROOT__/Uploads/{$userResulr.face}"/>上传头像</div>
+                        </label>
+                        </empty>
+                        
+
+
+                    </li>
+                    <li class="form_sex">
+                        <select name="" id="" disabled="disabled">
+                        <if condition="($userResulr1.sex eq 男)"> 
+                            <option value="男" selected>男</option>
+                        <else />
+                            <option value="女" selected>女</option>
+                        </if>
+                        </select>
+                    </li>
+                    <li class="form_email">
+                        <input class="text" type="text" value="邮箱：{$userResulr1.email}" disabled="disabled">
+                    </li>
+                    <li>
+                        <input class="text" type="text" value="电话：{$userResulr1.phone}" disabled="disabled">
+                    </li>
+                    <li class="distpicker1">
+                        <select class="prov" name="prov" id="prov"></select>
+                        <select class="city" name="city" id="city"></select>
+                        <select class="dist" name="dist" id="dist"></select>
+                    </li>
+                    <li>
+                        <input class="text" name="company" type="text" value="单位名称：{$userResulr.company}">
+                    </li>
+                    <li>
+                        <input class="text" name="field" type="text" value="擅长领域：{$userResulr.field}">
+                    </li>
+                    <li>
+                        <input class="text" name="technology" type="text" value="技术特长：{$userResulr.technology}">
+                    </li>
+                    <li>
+                        <label>
+                            <div class="form_video">上传视频</div>
+                            <input class="file_video" type="file">
+                        </label>
+                        <span class="error error_file_video">请上传MP4格式的文件！</span>
+                    </li>
+                    <li>
+                        <textarea class="intro" name="introduction" id="">个人简介：{$userResulr.introduction}</textarea>
+                        <span class="ps">还可以输入<em class="num">300</em>字</span>
+                        <span class="ps" style="display: none;">已超过<em class="num">20</em>字,请删除！</span>
+                    </li>
+                    <li>
+                        <div class="checkbox_info">（可多选）</div>
+                        <div>
+                        <empty name="userResulr['teacher'][0]">
+                            <input type="checkbox" value="讲师" name="teacher[0]">
+                        <else /> 
+                            <input type="checkbox" value="讲师" name="teacher[0]" checked="checked">
+                        </empty> 
+                            <span>讲师</span>
+
+                        <empty name="userResulr['teacher'][1]"> 
+                            <input type="checkbox" value="咨询师" name="teacher[1]">
+                        <else /> 
+                            <input type="checkbox" value="咨询师" name="teacher[1]" checked="checked">
+                        </empty>
+                            <span>咨询师</span>
+
+                        <empty name="userResulr['teacher'][2]"> 
+                            <input type="checkbox" value="资源供应" name="teacher[2]">
+                        <else /> 
+                            <input type="checkbox" value="资源供应" name="teacher[2]" checked="checked">
+                        </empty>
+                            <span>资源供应</span>
+
+                        <empty name="userResulr['teacher'][3]"> 
+                            <input type="checkbox" value="资源需求" name="teacher[3]">
+                        <else />
+                            <input type="checkbox" value="资源需求" name="teacher[3]" checked="checked">
+                        </empty> 
+                            <span>资源需求</span>
+
+                        <empty name="userResulr['teacher'][4]">
+                            <input type="checkbox" value="资源供应" name="teacher[4]">
+                        <else />
+                            <input type="checkbox" value="资源供应" name="teacher[4]" checked="checked">
+                        </empty> 
+                            <span>培训需求供应</span>
+
+                        <empty name="userResulr['teacher'][4]">
+                            <input type="checkbox" value="资源需求" name="teacher[5]">
+                        <else />
+                            <input type="checkbox" value="资源需求" name="teacher[5]" checked="checked">
+                        </empty>
+                            <span>咨询需求</span>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="submit" type="submit" value="确认提交">
+                    </li>
+                </ul>      
+            </form>
+        </div>
+        <div class="reg_info">
+            注册信息
+        </div>
+    </div>
+    <script>
+        $(function() { 
+            $(".distpicker1").distpicker(); 
+            //去除单位/行业默认值
+            companyCheckVerify($('.reg_form form'));
+            // 视频格式判断
+            videoCheckVerify($('.reg_form form'));
+            // 个人简介字数检测
+            introCheckVerify($('.reg_form form'));
+            //头像预览
+            var content = document.getElementById('content');
+            var fileBtn = content.getElementsByTagName('input')[1];
+            fileBtn.onchange = function(){
+                previewImage(this);
+            }
+        })
+    </script>
+</block>

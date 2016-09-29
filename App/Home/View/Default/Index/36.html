@@ -1,0 +1,109 @@
+<extend name="Base/common" />
+<block name="head">
+    <link rel="stylesheet" href="__CSS__/public/page_nav.css">
+    <link rel="stylesheet" href="__CSS__/36.css">
+    <script src="__JS__/distpicker.data.js"></script>
+    <script src="__JS__/distpicker.js"></script>
+</block>
+<block name="main">
+    <div id="content" class="clear">
+        <div class="page_nav">
+            <a class="index" href="__ROOT__/Index/index">首页</a>
+            <span>&gt;</span>
+
+            <empty name="title">
+            <span></span>
+            <else/>
+            <a class="now_page" href="__ROOT__/Index/commitList1/nid/{$title.id}">{$title.36name}</a>
+            </empty>
+
+            <empty name="title2">
+            <span></span>
+            <else/>
+            <a class="now_page" href="__ROOT__/Index/commitList1/id/{$title2.id}">>{$title2.36name}</a>
+            </empty>
+
+
+            <empty name="title3">
+            <span></span>
+            <else/>
+            <a class="now_page" href="#">>{$title3.infoname}</a>
+            </empty>
+
+
+            <empty name="matter">
+                <span></span>
+            <else/>
+                <a class="now_page" href="#">>{$content1.infoname}</a>
+            </empty>
+            
+            
+            
+        </div>
+        <div class="article_list">
+            <h4>名称</h4>
+            <ul>
+
+                <foreach name="result" item="v" >   
+                <li>
+                    <p><a href="__ROOT__/Index/commitList1/id/{$v['id']}">{$v.36name}</a></p>
+                </li> 
+                </foreach>
+
+            <empty name="content.id">
+            <foreach name="result2" item="v" >   
+                <li>
+                    <p><a href="__ROOT__/Index/commitList1/iId/{$v['id']}">{$v.infoname}</a></p>
+                </li> 
+
+            </foreach>
+                <div class="page">
+                <table class="pages">
+                    <tr>
+                      <td height="20" colspan="3" align="right" padding="4">{$show}{$show2}</td>  
+                    </tr>
+                </table>   
+                </div>
+
+
+            <else/>
+                <li style="padding:6px;">
+                    {$content.infoname}
+                </li> 
+
+            </empty>
+            
+                
+                
+            </ul>
+        </div>
+        <div class="article_main">
+            <?php 
+
+            if($cont){
+
+                echo $cont;
+
+            }else{
+
+        ?>
+
+       <empty name="matter">
+
+        {$matter1} 
+
+        <else/>
+
+        {$matter} 
+
+        </empty>
+
+        <?php 
+
+            }
+
+        ?>
+        </div>
+        </div>
+    </div>
+</block>

@@ -1,0 +1,52 @@
+﻿<extend name="Base/common" />
+<block name="head">
+<link rel="stylesheet" href="__CSS__/36.css">
+<link rel="stylesheet" href="__CSS__/public/page_nav.css ">
+    <link rel="stylesheet" href="__CSS__/news.css">
+</block>
+<block name="main">
+
+    <div id="content" class="clear">
+        <div class="page_nav">
+            <a class="index" href="__ROOT__/Index/index">首页</a>
+            <span>&gt;</span>
+            <a class="now_page" href="__ROOT__/News/index">集群动态区</a>
+        </div>
+        <div class="article_list">
+            <h4>名称</h4>
+            <ul>
+                <foreach name="result" item="v" > 
+                    <li>
+                        <p><a href="__ROOT__/News/showNews/id/{$v.id}">{$v.title}</a></p>
+                    </li>
+                </foreach>
+                <table class="pages">
+                    <tr>
+                      <td height="20" colspan="3" align="right" padding="4">{$show}</td>  
+                    </tr>
+                </table>
+
+            </ul>
+        </div>
+        <div class="article_main">
+            <ul class="essay_list clear">
+            <foreach name="result" item="v" > 
+                <li>
+                    <p class="time">{$v.date}</p>
+                    <a href="__ROOT__/News/showNews/id/{$v.id}"><h4 class="title">{$v.title}</h4></a>
+                    <a class="images" href="__ROOT__/News/showNews/id/{$v.id}"><img src="__PUBLIC__/uploads/compress/{$v.pic}" alt=""></a>
+                    <p class="content"><a href="__ROOT__/News/showNews/id/{$v.id}">{$v.title}</a></p>
+                </li>
+            </foreach>
+            </ul>
+
+             <table class="pages">
+                    <tr>
+                      <td height="20" colspan="3" align="right" padding="4" style="font-size:14px;">{$show}</td>  
+                    </tr>
+                </table>
+
+        </div>
+
+    </div>
+</block>

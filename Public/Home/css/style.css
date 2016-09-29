@@ -1,0 +1,109 @@
+﻿
+
+/*页面主体开始*/
+#content { width: 1200px; margin: 0 auto; }
+#nav { width: 100%; overflow: hidden; }
+/*导航侧边栏开始*/
+#nav .nav_side { float: left; width: 300px; }
+#nav .banner { float: right; width: 900px; height: 575px; }
+#nav .nav_side dl { width: 100%; background: #4a4a4a; }
+#nav .nav_side dl dt { width: 100%; height: 30px; line-height: 30px; text-align: center; font-size: 16px; color: #fff; background: #323333; clear: both; }
+#nav .nav_side dl dd { float: left; width: 50%; height: 30px; line-height: 30px; text-align: center; background: #4a4a4a; cursor: pointer; position: relative; }
+#nav .nav_side dl dd a { font-size: 14px; color: #f3f3f3; }
+#nav .nav_side_info { background: #ccc; position: absolute; left: 100%; top: 0; z-index: 999; display: none; }
+#nav .nav_side_info li a { display: block; padding: 4px 6px; border-bottom: 1px solid #000; white-space:nowrap; color: #000 !important; }
+/*导航侧边栏结束*/
+/*导航顶部开始*/
+#nav .nav_top { width: 100%; height: 29px; border-bottom: 1px solid #d8d8d8; }
+#nav .nav_top li { float: left; width: 20%; height: 29px; line-height: 29px; text-align: center; }
+#nav .nav_top li a { font-size: 20px; font-weight: bold; cursor: pointer; color: #666; }
+#nav .nav_top li .active { color: #001c58; }
+#nav .nav_top li a:hover { color: #001c58; }
+/*导航顶部结束*/
+/*banner轮播开始*/
+#nav .banner_pic { width: 100%; height: 540px; overflow: hidden; border: 1px solid #d8d8d8; box-sizing: border-box; position: relative; }
+#nav .banner_pic_list { width: 5388px; height: 100%; position: absolute; }
+#nav .banner_pic_list li { float: left; width: 898px; height: 100%; }
+#nav .banner_pic_list li img { width: 100%; height: 100%; }
+#nav .banner_pic_nav { position: absolute; bottom: 10px; right: 20px; }
+#nav .banner_pic_nav span {float: left; width: 20px; height: 20px; margin-right: 10px; border-radius: 10px; border: 1px solid #4a4a4a; line-height: 20px; text-align: center; color: #fff; font-size: 14px; cursor: pointer; }
+#nav .banner_pic_nav .active { background: #4a4a4a; }
+/*banner轮播结束*/
+.seg { width: 100%; height: 4px; background: url(../img/bg.png); margin: 4px 0; }
+
+/*两化融合开始*/
+.pic_info { width: 100%; position: relative; }
+.pic_info .title { width: 100%; height: 40px; background: #001c58; }
+.pic_info .title h2 { float: left; width: 300px; height: 40px; background: #096032; line-height: 40px; font-size: 20px; color: #fff; font-weight: normal; text-align: center; }
+.pic_info .title a { float: right; font-size: 16px; color: #fff; margin-right: 8px; line-height: 40px; }
+.pic_info .pic_box { width: 952px; height: 290px; margin: 32px auto; overflow: hidden; position: relative; }
+.pic_info .pic_list { position: absolute; }
+.pic_info .pic_list li { width: 300px; float: left; margin-right: 20px; border: 2px solid #d8d8d8; }
+.pic_info .pic_list li img { width: 300px; height: 242px; }
+.pic_info .pic_list li p { height: 38px; border-top: 2px solid #d8d8d8; font-size: 16px; font-weight: bold; color: #333; line-height: 38px; text-align: center; }
+.pic_info .prey, .pic_info .next { width: 26px; height: 52px; position: absolute; top: 50%; margin-top: -6px; cursor: pointer; }
+.pic_info .prey { background: url(../img/prey.png) no-repeat; left: 42px; }
+.pic_info .next { background: url(../img/next.png) no-repeat right top; right: 42px; }
+/*两化融合结束*/
+/*政务服务开始*/
+.policy p, .association p, .institution p, .other p, .twofuse p { width: 174px; float: left; position: relative; z-index: 99999; }
+.pic_info .pic { position: relative; }
+.pic_info .pic img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.pic_info a:hover { color: #ccc; }
+.pic_info a.active { color: #ccc; }
+.policy_pic, .association_pic, .institution_pic, .other_pic, .twofuse_pic { position: absolute; left: 0; top: 45px; }
+.pic_info .pic { border: 1px solid #c4c5c4; overflow: hidden; }
+.pic_info .pic_left, .pic_info .pic_center, .pic_info .pic_right { float: left; }
+/*政策法规开始*/
+.policy_pic1, .association_pic1, .institution_pic1, .other_pic1, .twofuse_pic1 { opacity: 1; filter: alpha(opacity=100); z-index: 11; }
+.policy_pic1 .pic1, .other_pic1 .pic1, .other_pic4 .pic1 { float: left; width: 598px; height: 447px; margin: 3px 8px 7px 12px; }
+.policy_pic1 .pic2, .other_pic1 .pic2, .other_pic4 .pic2 { width: 568px; height: 228px; margin-top: 3px; }
+.policy_pic1 .pic3, .other_pic1 .pic3, .other_pic4 .pic3 { width: 568px; height: 210px; margin-top: 5px; }
+/*政务法规*/
+.policy_pic2 { opacity: 0; filter: alpha(opacity=0); }
+.policy_pic2 .pic1, .association_pic1 .pic1 { width: 419px; height: 218px; margin: 3px 8px 2px 12px; }
+.policy_pic2 .pic2, .association_pic1 .pic2 { width: 419px; height: 218px; margin-left: 12px; }
+.policy_pic2 .pic3, .association_pic1 .pic3 { width: 319px; height: 440px; margin-top: 3px; }
+.policy_pic2 .pic4, .association_pic1 .pic4 { width: 418px; height: 218px; margin: 3px 0 0 9px; }
+.policy_pic2 .pic5, .association_pic1 .pic5 { width: 418px; height: 218px; margin: 2px 0 0 9px; }
+/*专项资金*/
+.policy_pic3 { opacity: 0; filter: alpha(opacity=0); }
+.policy_pic3 .pic1, .policy_pic3 .pic2, .twofuse_pic3 .pic1, .twofuse_pic3 .pic2 { float: left; width: 588px; height: 438px; }
+.policy_pic3 .pic1, .twofuse_pic3 .pic1 { margin: 7px 8px 0 6px; }
+.policy_pic3 .pic2, .twofuse_pic3 .pic2 { margin-top: 7px; }
+/*减免税收*/
+.policy_pic4 { opacity: 0; filter: alpha(opacity=0); }
+.policy_pic4 .pic1 { float: left; width: 598px; height: 446px; margin: 3px 8px 7px 12px; }
+.policy_pic4 .pic2 { width: 568px; height: 229px; margin-top: 3px; }
+.policy_pic4 .pic3 { width: 568px; height: 211px; margin-top: 5px; }
+/*政务服务结束*/
+/*协会服务开始*/
+.association_pic2, .association_pic3, .association_pic4, .institution_pic2, .institution_pic3, .institution_pic4, .other_pic2, .other_pic3, .other_pic4, .twofuse_pic2, .twofuse_pic3, .twofuse_pic4 { opacity: 0; filter: alpha(opacity=0); }
+
+.association_pic2 .pic1, .institution_pic .pic1, .other_pic2 .pic1, .other_pic3 .pic1, .twofuse_pic1 .pic1, .twofuse_pic2 .pic1 { width: 599px; height: 218px; margin: 6px 8px 5px 12px; }
+.association_pic2 .pic2, .institution_pic .pic2, .other_pic2 .pic2, .other_pic3 .pic2, .twofuse_pic1 .pic2, .twofuse_pic2 .pic2 { width: 599px; height: 218px; margin-left: 12px; }
+.association_pic2 .pic3, .institution_pic .pic3, .other_pic2 .pic3, .other_pic3 .pic3, .twofuse_pic1 .pic3, .twofuse_pic2 .pic3 { width: 569px; height: 218px; margin-top: 6px; }
+.association_pic2 .pic4, .institution_pic .pic4, .other_pic2 .pic4, .other_pic3 .pic4, .twofuse_pic1 .pic4, .twofuse_pic2 .pic4 { width: 569px; height: 218px; margin-top: 5px; }
+
+
+.association_pic3 .pic { width: 389px; height: 218px; margin: 0 0 6px 6px; }
+
+.association_pic4 .pic1 { width: 599px; height: 218px; margin: 6px 8px 5px 12px; }
+.association_pic4 .pic2 { width: 599px; height: 218px; margin-left: 12px; }
+.association_pic4 .pic3 { width: 569px; height: 218px; margin-top: 6px; }
+.association_pic4 .pic4 { width: 569px; height: 218px; margin-top: 5px; }
+
+
+.twofuse_pic4 .pic1 { width: 1178px; height: 446px; margin: 6px 0 0 12px; }
+
+
+
+
+/*协会服务结束*/
+
+
+
+
+
+
+

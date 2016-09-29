@@ -1,0 +1,84 @@
+.title h1{
+	text-align: center;
+	line-height: 2.4375rem;
+}
+
+.title{
+	width: 100%;
+	height: 2.5rem;
+	background-color: #f0f7fd;
+}
+
+.main_word{
+	display: block;
+	margin: 0.625rem .5rem 3rem 2.8125rem;
+	border: 1px solid #cdcdcd;
+	padding: 2px .4rem;
+
+}
+.main_word *{
+	width: 100%;
+}
+.reg_form form ul li input{
+	width: 76%;
+	height: 3.28125rem;
+	margin: 0 auto;
+	display: block;
+	font-size: 1.8em;
+	margin-bottom: 1.875rem;
+	padding: 0 .625rem;
+	color: #a9a9a9;
+	position: relative;
+}
+.reg_form form ul li{
+	position: relative;
+}
+.reg_form .error{
+	display: none;
+	font-size: 1.2em;
+	color: #666;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+}
+.reg_form .error{
+	color: #fb1039;
+}
+
+
+.submit{
+	margin: 1.71875rem auto 1.71875rem;
+	background-color: #33a7fe;
+	display: block;
+	border: none;
+	width: 14rem;
+	height: 2.8125rem;
+	color: white;
+	font-size: 1.8em;
+}
+.student_name{
+	width: 44.8%;
+	border: 1px solid #ececec;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.student_name h2{
+	width: 100%;
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+	background-color: #f1f8fe;
+	color: #36a8fe;
+	font-size: 1rem;
+}
+.student_name li{
+	border-bottom: 1px dashed #ececec;
+	height: 2rem;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2rem;
+}
+
+
+

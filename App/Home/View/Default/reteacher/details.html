@@ -1,0 +1,75 @@
+<extend name="Base/common" />
+<block name="head">
+    <link rel="stylesheet" href="__CSS__/public/page_nav.css">
+    <link rel="stylesheet" href="__CSS__/lecturer_details.css">
+</block>
+<block name="main">
+    <div id="content" class="clear">
+        <div class="page_nav">
+            <a class="index" href="__ROOT__/Index/index">首页</a>
+            <span>&gt;</span>
+            <a class="now_page" href="__ROOT__/Reteacher/index/nid/17">讲师推荐</a>
+            <span>&gt;</span>
+            <a class="now_page" href="javascript:void(0)">详情</a>
+        </div>
+        <div class="main_left">
+
+            <empty name="teachOne.face">
+                <div class="head_pic"></div>
+            <else/>
+                 <img class="head_pic" src="__ROOT__/Uploads/{$teachOne.face}">
+            </empty>
+            
+            <p>收费情况：<span>2222</span></p>
+            <a href="#">在线支付</a>
+            <div class="map"></div>
+        </div>
+        <div class="main_right">
+            <ul class="lecturer_info">
+                <li class="clear">
+                    <span>姓名：</span>
+                    <p>{$teachOne1.user}</p>
+                </li>
+                <li class="clear">
+                    <span>性别：</span>
+                    <p>{$teachOne1.sex}</p>
+                </li>
+                <li class="clear">
+                    <span>地址：</span>
+                    <p>
+                        <span>&nbsp;&nbsp;{$teachOne.prov}&nbsp;&nbsp;&nbsp;</span>
+                        <span>{$teachOne.city}&nbsp;&nbsp;&nbsp;</span>
+                        <span>{$teachOne.dist}&nbsp;&nbsp;&nbsp;</span>
+                    </p>
+                </li>
+                <li class="clear">
+                    <span>擅长领域：</span>
+                    <p>{$teachOne.field}</p>
+                </li>
+                <li class="clear">
+                    <span>技术特长：</span>
+                    <p>{$teachOne.technology}</p>
+                </li>
+                <li class="clear">
+                    <span>职位：</span>
+                    <p>
+                    <foreach name="arr" item="v" >
+                    <span>{$v}&nbsp;&nbsp;&nbsp;</span>
+                    </foreach>
+                    </p>
+                </li>
+            </ul>
+            <p class="intro">
+                <span>个人简介：</span>
+                {$teachOne.introduction}
+            </p>
+            <div style="background: #000;">
+                <video width="594" height="400" controls>
+                <source src="321.mp4" type="video/mp4">
+                <object data="321.mp4" width="594" height="300"></object> 
+                </video>
+            </div>
+            
+        </div>
+    </div>
+</block>

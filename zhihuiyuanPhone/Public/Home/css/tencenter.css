@@ -1,0 +1,37 @@
+main{
+	padding-top: 3.0625rem;
+}
+
+.pica{
+	border-bottom: 1px solid #adadad;
+}
+.main-pic ul li{
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding: 1rem 2.5% .2rem;
+}
+.main-pic ul li span{
+	line-height: 1.5em;
+}
+.main-pic ul li div{
+	width: 100%;
+	float: left;
+	height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.main-pic ul li img{
+	width: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0;
+}
+.picb{
+	border-bottom: .75rem solid #f0f8fe;
+}
+.main-word{
+	padding: .5rem .5rem 4rem .5rem;
+	font-size: 1.4em;
+}
